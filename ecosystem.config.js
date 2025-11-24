@@ -1,14 +1,14 @@
 module.exports = {
   apps: [{
     name: 'nextjs-landing',
-    script: 'node_modules/next/dist/bin/next',
-    args: 'start',
+    script: 'server.js',
     instances: 'max',
     exec_mode: 'cluster',
     watch: false,
     env: {
       NODE_ENV: 'production',
-      PORT: 3000
+      PORT: 3003,
+      HOSTNAME: '0.0.0.0'
     }
   }]
 }
