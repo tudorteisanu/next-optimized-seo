@@ -21,7 +21,7 @@ export default function ContactForm() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('https://ng.nanoit.dev/api/contact', {
+      const response = await fetch('https://dotnet.nanoit.dev/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

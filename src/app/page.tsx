@@ -70,7 +70,7 @@ async function getLandingData(): Promise<LandingPageData> {
     };
   }
 
-  const res = await fetch('https://ng.nanoit.dev/api/landing-page', {
+  const res = await fetch('https://dotnet.nanoit.dev/api/landing-page', {
     next: { revalidate: 60 }
   });
   if (!res.ok) throw new Error('Failed to fetch landing data');
@@ -83,7 +83,7 @@ async function getStats(): Promise<Stats> {
     return { users: '10K+', projects: '5K+', uptime: '99.9%', countries: '50+' };
   }
 
-  const res = await fetch('https://ng.nanoit.dev/api/stats', {
+  const res = await fetch('https://dotnet.nanoit.dev/api/stats', {
     next: { revalidate: 60 }
   });
   if (!res.ok) throw new Error('Failed to fetch stats');
@@ -96,7 +96,7 @@ async function getPricing(): Promise<PricingPlan[]> {
     return [];
   }
 
-  const res = await fetch('https://ng.nanoit.dev/api/pricing', {
+  const res = await fetch('https://dotnet.nanoit.dev/api/pricing', {
     next: { revalidate: 60 }
   });
   if (!res.ok) throw new Error('Failed to fetch pricing');
@@ -109,7 +109,7 @@ async function getTestimonials(): Promise<Testimonial[]> {
     return [];
   }
 
-  const res = await fetch('https://ng.nanoit.dev/api/testimonials', {
+  const res = await fetch('https://dotnet.nanoit.dev/api/testimonials', {
     next: { revalidate: 60 }
   });
   if (!res.ok) throw new Error('Failed to fetch testimonials');

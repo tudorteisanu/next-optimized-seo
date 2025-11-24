@@ -13,7 +13,7 @@ interface PricingPlan {
 }
 
 async function getPricing(): Promise<PricingPlan[]> {
-  const res = await fetch('https://ng.nanoit.dev/api/pricing', {
+  const res = await fetch('https://dotnet.nanoit.dev/api/pricing', {
     next: { revalidate: 60 }
   });
   if (!res.ok) throw new Error('Failed to fetch pricing');
