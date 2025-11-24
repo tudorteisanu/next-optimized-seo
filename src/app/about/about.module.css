@@ -1,0 +1,181 @@
+.aboutPage {
+  min-height: 100vh;
+}
+
+.pageHero {
+  background: linear-gradient(135deg, #0f33d3 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pageHero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.mission {
+  padding: 80px 20px;
+  background: white;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  align-items: center;
+}
+
+.contentBlock h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2d3748;
+}
+
+.contentBlock p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.imagePlaceholder {
+  background: linear-gradient(135deg, #0f33d3 0%, #764ba2 100%);
+  border-radius: 12px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 8rem;
+}
+
+.values {
+  padding: 80px 20px;
+  background: #f7fafc;
+}
+
+.values h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #2d3748;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.valueCard {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.valueIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.valueCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+.valueCard p {
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+.team {
+  padding: 80px 20px;
+  background: white;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #2d3748;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teamMember {
+  background: #f7fafc;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.memberAvatar {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.teamMember h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2d3748;
+}
+
+.role {
+  font-weight: 600;
+  color: #0f33d3;
+  margin-bottom: 15px;
+}
+
+.bio {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.ctaSection {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f33d3 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.ctaSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .pageHero h1 {
+    font-size: 2rem;
+  }
+
+  .contentGrid,
+  .valuesGrid,
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .imagePlaceholder {
+    height: 300px;
+  }
+}

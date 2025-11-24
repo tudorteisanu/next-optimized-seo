@@ -1,0 +1,192 @@
+.landingPage {
+  min-height: 100vh;
+}
+
+/* Stats Section */
+.stats {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f33d3 0%, #764ba2 100%);
+  color: white;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statCard {
+  text-align: center;
+  padding: 20px;
+}
+
+.statValue {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.statLabel {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.pricing h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricingCard {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.pricingCard.highlighted {
+  transform: scale(1.05);
+  border: 3px solid #0f33d3;
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+.pricingCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.price {
+  margin: 30px 0;
+}
+
+.price .amount {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0f33d3;
+}
+
+.price .period {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.featuresList li {
+  padding: 10px 0;
+  color: #2d3748;
+}
+
+.planButton {
+  width: 100%;
+  padding: 15px;
+  background: #1b37b2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.planButton:hover {
+  background: #5568d3;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 20px;
+  background: white;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialCard .avatar {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonialCard .content {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #2d3748;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonialCard .author {
+  margin-bottom: 10px;
+}
+
+.testimonialCard .name {
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonialCard .role {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.testimonialCard .rating {
+  font-size: 1.2rem;
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+  .statsGrid,
+  .pricingGrid,
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricingCard.highlighted {
+    transform: scale(1);
+  }
+}
